@@ -1,1 +1,11 @@
-{"$schema":"https://glama.ai/schema/glama.json","maintainers":["bidda-admin"]}
+{
+  "$schema": "https://glama.ai/schema/glama.json",
+  "name": "Bidda Sovereign Intelligence",
+  "description": "5835 cryptographically-verified compliance nodes across 34 pillars. Zero hallucination MCP server for regulatory compliance intelligence. Covers EU AI Act, GDPR, HIPAA, DORA, Basel III, FATF, NIS2, NIST AI RMF, ISO 27001, MiCA and 150+ frameworks. Every node traces to a primary legal source.",
+  "maintainers": ["bidda-admin"],
+  "homepage": "https://bidda.com",
+  "endpoint": "https://bidda.com/mcp",
+  "license": "MIT",
+  "categories": ["compliance", "legal", "finance", "security", "governance"],
+  "contact": "info@bidda.com"
+}
