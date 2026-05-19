@@ -1,26 +1,17 @@
 {
-  "name": "bidda-compliance",
-  "displayName": "Bidda Sovereign Intelligence",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bidda-ai/bidda-compliance",
+  "description": "5835 cryptographically-verified regulatory compliance nodes across 34 pillars. Zero hallucination MCP server — every node traces to a primary legal source with avg 7 citations. Covers EU AI Act, GDPR, HIPAA, DORA, Basel III, FATF, NIS2, NIST AI RMF, ISO 27001, MiCA and 150+ frameworks. Also includes 203 MITRE nodes (ATT&CK Enterprise/Mobile/ICS, D3FEND, ATLAS, CAPEC). No API key required for discovery tier.",
   "version": "1.0.0",
-  "description": "5835 cryptographically-verified regulatory compliance nodes across 34 pillars. Zero hallucination by design - every node traces to a primary legal source with avg 7 citations. Covers EU AI Act, GDPR, HIPAA, DORA, Basel III, FATF, NIS2, NIST AI RMF, ISO 27001, MiCA and 150+ frameworks across AI Governance, Cybersecurity, Banking, Healthcare, Legal, ESG and more. Also includes 203 MITRE nodes across 6 frameworks (ATT&CK, D3FEND, ATLAS, CAPEC).",
-  "endpoint": "https://bidda.com/mcp",
-  "transport": "http",
-  "protocol": "2025-03-26",
+  "repository": {
+    "url": "https://github.com/Bidda-Ai/bidda-mcp"
+  },
   "homepage": "https://bidda.com",
-  "repository": "https://github.com/Bidda-Ai/bidda-mcp",
   "license": "MIT",
-  "contact": "info@bidda.com",
-  "authRequired": false,
-  "categories": ["compliance", "legal", "finance", "security", "ai-governance", "healthcare"],
-  "tools": [
-    "list_pillars",
-    "search_nodes",
-    "get_node",
-    "get_dependency_chain",
-    "get_crosswalk",
-    "get_latest_changes",
-    "get_jurisdiction_bundle",
-    "get_mitre_mapping",
-    "check_action_compliance"
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bidda.com/mcp"
+    }
   ]
 }
