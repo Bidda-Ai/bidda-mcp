@@ -1,6 +1,6 @@
 # Bidda Sovereign Intelligence MCP Server
 
-> 5,835 cryptographically-verified regulatory compliance nodes across 34 pillars + 203 MITRE nodes across 6 frameworks - zero hallucination by design.
+> 7,243 cryptographically-verified regulatory compliance nodes across 34 pillars + 1,185 MITRE nodes across 6 frameworks - zero hallucination by design.
 
 [![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
 
@@ -25,7 +25,7 @@ No API key required for discovery tier.
 | Tool | Description |
 |------|-------------|
 | `list_pillars` | List all 34 compliance pillars with node counts. Use this first to discover available domains. |
-| `search_nodes` | Search by keyword across 5,835 nodes - returns title, ID, pillar, and BLUF (plain-language obligation). |
+| `search_nodes` | Search by keyword across 7,243 nodes - returns title, ID, pillar, and BLUF (plain-language obligation). |
 | `get_node` | Fetch a specific node by ID - returns full summary + link to machine-executable workflow. |
 | `get_dependency_chain` | Walk the prerequisite chain for a node. Returns the full dependency tree (depth 2 default, max 4). |
 | `get_crosswalk` | Return cross-framework mapping dimensions for a node (e.g. GDPR Art 17 -> CCPA -> POPIA Section 24). |
@@ -74,18 +74,20 @@ get_dependency_chain("eu-gdpr-article-35-dpia")
 
 | Pillar | Nodes |
 |--------|-------|
-| Cybersecurity | 620+ |
-| AI Governance & Law | 324+ |
-| Banking & Global Finance | 351+ |
-| Legal & IP Sovereignty | 275+ |
-| Sustainability & ESG | 147+ |
-| Workplace | 159+ |
-| Medical & Healthcare | 114+ |
+| Cybersecurity | 1,947 |
+| Legal & IP Sovereignty | 697 |
+| Banking & Global Finance | 581 |
+| AI Governance & Law | 566 |
+| Medical & Healthcare | 325 |
+| Sustainability & ESG | 286 |
+| Workplace | 281 |
 | + 27 more pillars | -- |
-| MITRE ATT&CK Enterprise | 50 techniques / 14 tactics |
-| MITRE D3FEND | 27 techniques / 7 tactics |
-| MITRE ATLAS | 111 techniques / 16 tactics |
-| CAPEC | 30 nodes |
+| MITRE ATT&CK Enterprise | 654 nodes |
+| MITRE ATT&CK Mobile | 15 nodes |
+| MITRE ATT&CK ICS | 12 nodes |
+| MITRE D3FEND | 37 nodes |
+| MITRE ATLAS | 57 nodes |
+| MITRE CAPEC | 410 nodes |
 
 Full coverage: [bidda.com/intelligence](https://bidda.com/intelligence)
 
