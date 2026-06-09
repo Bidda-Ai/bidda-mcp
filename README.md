@@ -2,6 +2,7 @@
 
 > 9,500 cryptographically-verified regulatory compliance nodes across 39 sovereign pillars — zero hallucination by design.
 
+[![smithery badge](https://smithery.ai/badge/bidda-ai/bidda-compliance)](https://smithery.ai/servers/bidda-ai/bidda-compliance)
 [![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 
