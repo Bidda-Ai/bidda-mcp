@@ -1,11 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.bidda-ai/bidda-compliance",
-  "description": "9,762 source-verified regulatory compliance nodes across 39 sovereign pillars, built to reduce hallucination by grounding every node in a primary legal source (avg 7 citations). Covers EU AI Act, GDPR, HIPAA, DORA, Basel III, FATF, NIS2, NIST AI RMF, ISO 27001, MiCA, POPIA and 150+ frameworks, plus a MITRE cross-cut layer across 6 frameworks (ATT&CK Enterprise/Mobile/ICS, D3FEND, ATLAS, CAPEC). 14 tools: list_pillars, search_nodes, get_node, get_dependency_chain, get_crosswalk, get_latest_changes, get_jurisdiction_bundle, get_mitre_mapping, check_action_compliance, browse_topics, compare_jurisdictions, create_attestation, point_in_time, watch_changes. Public CISA Secure by Design Pledge signatory. No API key required for the discovery tier.",
+  "name": "com.bidda/bidda-compliance",
+  "description": "9,762 source-verified compliance nodes (EU AI Act, GDPR, HIPAA, DORA, NIST, MITRE). 14 MCP tools.",
   "version": "1.1.0",
-  "repository": {
-    "url": "https://github.com/Bidda-Ai/bidda-mcp"
-  },
   "homepage": "https://bidda.com",
   "license": "MIT",
   "remotes": [
