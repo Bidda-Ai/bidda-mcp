@@ -6,7 +6,7 @@
 [![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 
-_Actively maintained. Last reviewed 2026-06-21 — 9,762 nodes across 39 pillars, 14 MCP tools (server v1.1.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
+_Actively maintained. Last reviewed 2026-06-21 - 9,762 nodes across 39 pillars, 14 MCP tools (server v1.1.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
 
 ## What is Bidda?
 
