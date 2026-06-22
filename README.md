@@ -99,6 +99,8 @@ Full coverage browser: [bidda.com/intelligence](https://bidda.com/intelligence)
 
 ## How Bidda reduces hallucination
 
+Nodes are produced by Bidda's internal deterministic pipeline: source parsers and verification scripts do the heavy lifting, AI assists only in a small, tightly-gated drafting step, and every node passes multiple independent verification gates before publication. The whole design exists to keep drift to a minimum.
+
 Every node has:
 - **Primary legal citations**: real instruments, real URLs, real section numbers (avg 7 per node)
 - **Deterministic workflow**: machine-executable steps, not prose summaries
