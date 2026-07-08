@@ -1,12 +1,12 @@
 # Bidda Sovereign Intelligence MCP Server
 
-> 9,762 source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
+> 10,040 source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
 
 [![smithery badge](https://smithery.ai/badge/bidda-ai/bidda-compliance)](https://smithery.ai/servers/bidda-ai/bidda-compliance)
 [![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 
-_Actively maintained. Last reviewed 2026-06-21 - 9,762 nodes across 39 pillars, 14 MCP tools (server v1.1.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
+_Actively maintained. Last reviewed 2026-07-08 - 10,040 nodes across 39 pillars, 18 MCP tools (server v1.3.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
 
 ## What is Bidda?
 
@@ -24,14 +24,14 @@ GET  https://bidda.com/mcp   (server info, open this in a browser to inspect)
 Transport: Streamable HTTP (MCP 2025-03-26).
 No API key required for the discovery tier.
 
-## Tools (14)
+## Tools (18)
 
 ### Free discovery and intelligence (no key required)
 
 | Tool | Description |
 |------|-------------|
 | `list_pillars` | List all 39 compliance pillars with live node counts |
-| `search_nodes` | Search by keyword across 9,762 nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
+| `search_nodes` | Search by keyword across 10,040 nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
 | `get_node` | Fetch a specific node by ID; returns summary plus link to machine-executable workflow |
 | `get_dependency_chain` | Walk the prerequisite chain for a node (1 to 4 hops). Plan a full compliance posture from one entry node. |
 | `get_crosswalk` | Cross-framework mapping dimensions for a node (e.g. GDPR Art 17 to CCPA right-to-delete to POPIA Sec 24) |
@@ -49,6 +49,10 @@ No API key required for the discovery tier.
 | `create_attestation` | Create a signed, time-stamped record of which rules a person or AI agent relied on for a decision, with a public verify URL |
 | `point_in_time` | Signed record of which committed version of a rule was authoritative at a past date, anchored to the public history chain |
 | `watch_changes` | Subscribe to email or webhook alerts when a watched rule or pillar's primary source changes |
+| `open_run` | Open a run ledger for a whole task or conversation (for example a support-bot chat). Returns a run_id. |
+| `record_run_entry` | Append one tamper-evident entry to an open run: the rules consulted, the decision, and the user input as text or a private hash |
+| `seal_run` | Seal a run into one signed run receipt covering every entry, with a public verify URL anyone can check against Bidda's public key |
+| `get_run` | Fetch a run and its entries; a sealed run is publicly readable and reports whether its signature is valid |
 
 The discovery responses for every free tool are free. Full vault unlock (`deterministic_workflow`, `actionable_schema`, full `primary_citations`) costs $0.01 per node via Skyfire JWT or USDC on Base. The subscriber tools require an active Bidda subscription, which includes a free trial.
 
@@ -78,6 +82,9 @@ check_action_compliance("process EU resident biometric data", jurisdiction="eu")
 browse_topics("data breach notification")
 compare_jurisdictions("data breach notification", api_key="YOUR_BIDDA_KEY")
 create_attestation(agent="loan-bot-v2", nodes=["gdpr-article-22-automated-decisions"], api_key="YOUR_BIDDA_KEY")
+open_run(agent="acme-support-bot", label="chat 8f21", api_key="YOUR_BIDDA_KEY")
+record_run_entry(run_id="run_...", nodes=["gdpr-article-17-right-to-erasure"], note="User: delete my data", api_key="YOUR_BIDDA_KEY")
+seal_run(run_id="run_...", api_key="YOUR_BIDDA_KEY")
 ```
 
 ## Coverage (live numbers via `list_pillars()`)
