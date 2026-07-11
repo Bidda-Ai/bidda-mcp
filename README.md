@@ -1,12 +1,12 @@
 # Bidda Sovereign Intelligence MCP Server
 
-> 10,040 source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
+> 10,065 source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
 
 [![smithery badge](https://smithery.ai/badge/bidda-ai/bidda-compliance)](https://smithery.ai/servers/bidda-ai/bidda-compliance)
 [![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 
-_Actively maintained. Last reviewed 2026-07-08 - 10,040 nodes across 39 pillars, 18 MCP tools (server v1.3.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
+_Actively maintained. Last reviewed 2026-07-11 - 10,065 nodes across 39 pillars, 25 MCP tools (server v1.6.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
 
 ## What is Bidda?
 
@@ -24,14 +24,14 @@ GET  https://bidda.com/mcp   (server info, open this in a browser to inspect)
 Transport: Streamable HTTP (MCP 2025-03-26).
 No API key required for the discovery tier.
 
-## Tools (18)
+## Tools (25)
 
 ### Free discovery and intelligence (no key required)
 
 | Tool | Description |
 |------|-------------|
 | `list_pillars` | List all 39 compliance pillars with live node counts |
-| `search_nodes` | Search by keyword across 10,040 nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
+| `search_nodes` | Search by keyword across 10,065 nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
 | `get_node` | Fetch a specific node by ID; returns summary plus link to machine-executable workflow |
 | `get_dependency_chain` | Walk the prerequisite chain for a node (1 to 4 hops). Plan a full compliance posture from one entry node. |
 | `get_crosswalk` | Cross-framework mapping dimensions for a node (e.g. GDPR Art 17 to CCPA right-to-delete to POPIA Sec 24) |
@@ -53,6 +53,13 @@ No API key required for the discovery tier.
 | `record_run_entry` | Append one tamper-evident entry to an open run: the rules consulted, the decision, and the user input as text or a private hash |
 | `seal_run` | Seal a run into one signed run receipt covering every entry, with a public verify URL anyone can check against Bidda's public key |
 | `get_run` | Fetch a run and its entries; a sealed run is publicly readable and reports whether its signature is valid |
+| `consult_node` | Governed runs: fetch a full node and record a verified, hash-pinned entry in an open run in one call, so the sealed receipt proves exactly which version of the rule the agent read |
+| `get_audit_pack` | Export a sealed run as one auditor-ready evidence pack: the signed receipt, the entry chain, and an independent integrity self-check |
+| `drift_check` | Check whether a cached compliance snapshot is still current: pass node ids (optionally with version or content hash) and get fresh, drifted, or withdrawn per node |
+| `create_control_attestation` | Signed record mapping one of your internal controls to the Bidda obligations it addresses, with owner, framework, status, and a public verify URL. An audit trail, not a determination of compliance. |
+| `gap_check` | Walk the public dependency graph from the nodes you cover to surface prerequisite obligations you may be missing |
+| `obligation_deltas` | Obligation-level feed of which primary sources changed or were withdrawn since a date, filterable by pillar or node |
+| `oscal_assessment_results` | Export a sealed governed run as a NIST OSCAL assessment-results document for GRC tooling |
 
 The discovery responses for every free tool are free. Full vault unlock (`deterministic_workflow`, `actionable_schema`, full `primary_citations`) costs $0.01 per node via Skyfire JWT or USDC on Base. The subscriber tools require an active Bidda subscription, which includes a free trial.
 
