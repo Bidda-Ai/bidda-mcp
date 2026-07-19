@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.bidda/bidda-compliance",
-  "description": "10,065 source-verified compliance nodes, 39 pillars, 25 MCP tools (EU AI Act, GDPR, NIST, MITRE).",
+  "description": "10,000+ source-verified compliance nodes, 39 pillars, 25 MCP tools (EU AI Act, GDPR, NIST, MITRE).",
   "version": "1.6.0",
   "homepage": "https://bidda.com",
   "license": "MIT",
