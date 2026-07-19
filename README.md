@@ -73,6 +73,39 @@ https://bidda.com/mcp
 
 That is it: no install, no API key, no config file for the discovery tier. The full server-info manifest is available at `GET https://bidda.com/mcp` (open in a browser to inspect available tools).
 
+## Run it locally (Node or Docker)
+
+This repo also ships a small local stdio MCP server (`server.js`) that implements the free discovery and intelligence tools by calling the public Bidda REST API - no API key required. Use it when you want the server running on your own machine or CI.
+
+With Node (18+):
+
+```bash
+npm install
+node server.js
+```
+
+With Docker:
+
+```bash
+docker build -t bidda-mcp .
+docker run -i --rm bidda-mcp
+```
+
+Claude Desktop / Cursor config:
+
+```json
+{
+  "mcpServers": {
+    "bidda": {
+      "command": "node",
+      "args": ["/absolute/path/to/bidda-mcp/server.js"]
+    }
+  }
+}
+```
+
+The local server exposes seven tools: `list_pillars`, `search_nodes`, `get_node`, `get_dependency_chain`, `get_latest_changes`, `browse_topics`, and `check_action_compliance`. The subscriber, vault, and attestation tools are available only on the hosted endpoint at `https://bidda.com/mcp`.
+
 ## Example Queries
 
 ```

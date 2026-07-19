@@ -1,0 +1,35 @@
+{
+  "name": "bidda-mcp-server",
+  "version": "1.6.0",
+  "description": "Local MCP server for Bidda source-verified compliance intelligence. Serves the free discovery and intelligence tools over the public Bidda API, with no API key.",
+  "type": "module",
+  "bin": {
+    "bidda-mcp-server": "server.js"
+  },
+  "main": "server.js",
+  "files": [
+    "server.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "compliance",
+    "regulatory",
+    "bidda"
+  ],
+  "homepage": "https://bidda.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bidda-Ai/bidda-mcp.git"
+  },
+  "license": "MIT"
+}
