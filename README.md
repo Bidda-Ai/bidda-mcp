@@ -3,7 +3,7 @@
 > 10,000+ source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
 
 [![smithery badge](https://smithery.ai/badge/bidda-ai/bidda-compliance)](https://smithery.ai/servers/bidda-ai/bidda-compliance)
-[![Glama score](https://glama.ai/mcp/servers/bidda-compliance/badges/score.svg)](https://glama.ai/mcp/servers/bidda-compliance)
+[![Glama score](https://glama.ai/mcp/servers/Bidda-Ai/bidda-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Bidda-Ai/bidda-mcp)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 
 _Actively maintained. Last reviewed 2026-07-19 - 10,000+ nodes across 39 pillars, 25 MCP tools (server v1.6.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
