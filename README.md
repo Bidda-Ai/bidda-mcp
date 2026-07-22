@@ -75,7 +75,7 @@ That is it: no install, no API key, no config file for the discovery tier. The f
 
 ## Run it locally (Node or Docker)
 
-This repo also ships a small local stdio MCP server (`server.js`) that implements the free discovery and intelligence tools by calling the public Bidda REST API - no API key required. Use it when you want the server running on your own machine or CI.
+This repo also ships a runnable local stdio MCP server (`server.js`) that declares the full 25-tool surface. The free discovery and intelligence tools run locally by calling the public Bidda REST API, with no API key. The subscriber and governance tools are declared with their full schemas and execute on the hosted endpoint at `https://bidda.com/mcp` with your Bidda key. Use it when you want the server running on your own machine or CI.
 
 With Node (18+):
 
@@ -104,7 +104,7 @@ Claude Desktop / Cursor config:
 }
 ```
 
-The local server exposes seven tools: `list_pillars`, `search_nodes`, `get_node`, `get_dependency_chain`, `get_latest_changes`, `browse_topics`, and `check_action_compliance`. The subscriber, vault, and attestation tools are available only on the hosted endpoint at `https://bidda.com/mcp`.
+The local server declares all 25 tools. Ten run locally with no API key: `list_pillars`, `search_nodes`, `get_node`, `get_dependency_chain`, `get_crosswalk`, `get_mitre_mapping`, `get_jurisdiction_bundle`, `browse_topics`, `get_latest_changes`, and `check_action_compliance`. `compare_jurisdictions` uses your Bidda key when the comparison is gated. The remaining subscriber and governance tools (attestations, the run ledger, change alerts, drift checks, and OSCAL export) require a Bidda subscription key and execute on the hosted endpoint at `https://bidda.com/mcp`; a free trial counts.
 
 ## Example Queries
 
