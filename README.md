@@ -1,13 +1,13 @@
 # Bidda Sovereign Intelligence MCP Server
 
-> 10,100+ source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
+> 10,000+ source-verified regulatory compliance nodes across 39 sovereign pillars. Built to reduce hallucination by grounding every node in primary legal sources.
 
 [![smithery badge](https://smithery.ai/badge/bidda-ai/bidda-compliance)](https://smithery.ai/servers/bidda-ai/bidda-compliance)
 [![bidda-mcp MCP server](https://glama.ai/mcp/servers/Bidda-Ai/bidda-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Bidda-Ai/bidda-mcp)
 [![CISA Secure by Design](https://img.shields.io/badge/CISA-Secure%20by%20Design%20Pledge-blue)](https://bidda.com/cisa/secure-by-design)
 [![MCP Marketplace](https://img.shields.io/badge/MCP%20Marketplace-Indexed-blueviolet)](https://getlulu.dev/mcps/bidda-mcp)
 
-_Actively maintained. Last reviewed 2026-08-12 - 10,108 nodes across 39 pillars, 25 MCP tools (server v1.6.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
+_Actively maintained. Last reviewed 2026-10-14 - 10,099 nodes across 39 pillars, 25 MCP tools (server v1.7.0). Live counts always available via `list_pillars()` and `GET https://bidda.com/mcp`._
 
 ## What is Bidda?
 
@@ -32,7 +32,7 @@ No API key required for the discovery tier.
 | Tool | Description |
 |------|-------------|
 | `list_pillars` | List all 39 compliance pillars with live node counts |
-| `search_nodes` | Search by keyword across 10,100+ nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
+| `search_nodes` | Search by keyword across 10,000+ nodes; returns title, ID, pillar, and BLUF (plain-language obligation) |
 | `get_node` | Fetch a specific node by ID; returns summary plus link to machine-executable workflow |
 | `get_dependency_chain` | Walk the prerequisite chain for a node (1 to 4 hops). Plan a full compliance posture from one entry node. |
 | `get_crosswalk` | Cross-framework mapping dimensions for a node (e.g. GDPR Art 17 to CCPA right-to-delete to POPIA Sec 24) |

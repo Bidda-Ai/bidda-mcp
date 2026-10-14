@@ -1,6 +1,6 @@
 {
   "name": "bidda-mcp-server",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Local MCP server for Bidda source-verified compliance intelligence. Serves the free discovery and intelligence tools over the public Bidda API, with no API key.",
   "type": "module",
   "bin": {

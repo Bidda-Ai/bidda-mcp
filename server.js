@@ -633,6 +633,13 @@ const handlers = {
     return {
       action,
       risk_level: data.risk_level,
+      // Passed through deliberately. risk_level names a reading it cannot
+      // support on its own: it reports how strongly the registry matches the
+      // described action, not an assessment of legal risk. A caller that sees
+      // only the level has no way to know that, so the basis travels with it.
+      risk_basis: data.risk_basis,
+      top_score: data.top_score,
+      ranking: data.ranking,
       total_matches: data.total_matches,
       summary: data.summary,
       matches: (data.matches || []).map((m) => ({ node_id: m.node_id, title: m.title, pillar: m.pillar, score: m.score, bluf: m.bluf, url: m.site_url || siteUrl(m.node_id) })),
